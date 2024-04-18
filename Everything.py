@@ -6,7 +6,7 @@ def bobs(a):
     return b
 print(bobs("baobadasdbobawdasbobaws"))
 
-def subo(a):
+def substr(a):
     b=a[0]
     c=''
     for i in range(len(a)):
@@ -17,7 +17,7 @@ def subo(a):
         else:
             b=a[i]
     return c
-print(subo('abcdsgesgofedasdbvjih'))
+print(substr('abcdsgesgofedasdbvjih'))
 
 def squarewhile(a):
     b=2
@@ -39,11 +39,11 @@ def cuberootwhile(a):
     return b
 print(cuberootwhile(-8))
 
-def cubefor(a):
+def cuberootfor(a):
     for i in range (a+1):
         if i**3==a:
             return i
-print(cubefor(-8))
+print(cuberootfor(-8))
 
 def bindec(a):
     b=len(a)-1
@@ -80,6 +80,12 @@ def multit(a,b):
     return result
 print(multit(5,4))
 
+def multrec(a,b):
+    if b==0:
+        return 0
+    else:
+        return a+multrec(a,b-1)
+print(multrec(5,4))
 def factit(a):
     b=1
     while a>0:
@@ -202,3 +208,27 @@ def applytoeach2(L,x):
         print(f(x))
 applytoeach2([int,abs],-5.2)
 
+import module
+a=500
+b=800
+print(a)
+print(module.a)
+module.hi()
+
+a=5 #module.py
+b=8
+def hi():
+    print(a+b)
+
+import circle
+pi = 3
+print(pi)
+print(circle.pi)
+print(circle.area((3)))
+print(circle.circumference(3))
+
+pi = 3.141592653589793 #circle.py
+def area(radius):
+    return pi * (radius**2)
+def circumference(radius):
+    return 2*pi*radius
