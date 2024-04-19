@@ -254,6 +254,17 @@ def ki(a,b):
 
         return ki(b, a%b)
 
+localhost:~/python# cat si.py
+a = [1, 2, 3]
+output = ','.join(map(str, a))
+print(output)
+localhost:~/python# python3 li.py
+1,2,3
+
+
+
+
+
 
 
 
