@@ -232,3 +232,28 @@ def area(radius):
     return pi * (radius**2)
 def circumference(radius):
     return 2*pi*radius
+
+..................................
+localhost:~/python# cat luka.py
+import func as f
+
+def hi(a, b, f):
+    c = min(a, b)
+    while c > 0:
+        if a % c == 0 and b % c == 0:
+            return "iterative: ", c , "recursive: ", f.ki(a,b)
+        c -=1
+        
+a = 15
+b = 12
+print(hi(a, b, f))
+localhost:~/python# cat func.py
+def ki(a,b):
+        if b==0:
+                return a
+
+        return ki(b, a%b)
+
+
+
+
