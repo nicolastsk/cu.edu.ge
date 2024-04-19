@@ -170,8 +170,8 @@ def fibrec(a):
 print(fibrec(5))
 
 def fibit(a):
-    b, c = 1, 1
-    while a > 1:
+    b, c = 0, 1
+    while a > 0:
         b, c, a = c, b + c, a - 1
     return c
 print(fibit(5))
